@@ -68,7 +68,6 @@ export type ScrollSizeObserverCallback = (
 export class ScrollSizeObserver {
   
   private resizeObserver = new ResizeObserver(entries => {
-    console.log(entries)
     this.checkChange(entries.map(entry => entry.target.parentElement as Element))
   })
   
