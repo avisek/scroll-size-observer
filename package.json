@@ -12,9 +12,9 @@
     "resize",
     "event",
     "observer",
-    "scrollWidth",
-    "scrollHeight",
-    "zero-dependency"
+    "scrollwidth",
+    "scrollheight",
+    "zero-dependencies"
   ],
   "homepage": "https://avisek.github.io/scroll-size-observer/",
   "repository": {
