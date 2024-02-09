@@ -8,6 +8,7 @@ ScrollSizeObserver is a lightweight JavaScript library that provides a simple an
 - **Flexible Configuration**: Offers options to observe horizontal and/or vertical scroll sizes based on requirements.
 - **Efficient Observations**: Utilizes modern browser APIs to efficiently track changes without impacting performance.
 - **Cross-Browser Compatibility**: Compatible with major modern browsers, ensuring consistent behavior across different environments.
+- **TypeScript Support**: Provides full support for TypeScript, enabling type-checking and enhanced development experience.
 - **Lightweight**: Zero-dependency minimal footprint ensures fast loading times and optimal performance.
 
 ## Demo
@@ -20,12 +21,6 @@ You can install ScrollSizeObserver via npm:
 
 ```sh
 npm install scroll-size-observer
-```
-
-Alternatively, you can include it directly in your HTML:
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/scroll-size-observer/dist/scroll-size-observer.min.js"></script>
 ```
 
 ## Usage
