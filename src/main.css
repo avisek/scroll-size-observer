@@ -1,0 +1,134 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  display: grid;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  place-content: center;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: 1.5;
+  color: rebeccapurple;
+  background-color: ghostwhite;
+}
+
+main {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+a {
+  color: mediumpurple;
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.Demo {
+  background-color: lavender;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+}
+
+.Status {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: max(1rem, 4%);
+  row-gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.Status_Group {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: max(1rem, 8%);
+  row-gap: 0.5rem;
+}
+
+.Status_Property {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.Status_Name {
+  
+}
+
+.Status_Value {
+  min-width: 4ch;
+  text-align: right;
+  font-weight: 500;
+}
+
+.Scroller {
+  width: 44rem;
+  min-width: 100%;
+  max-width: calc(100vw - 4.5rem);
+  height: 24rem;
+  max-height: calc(100vh - 16rem);
+  padding: 1rem;
+  text-align: left;
+  overflow: auto;
+  border-radius: 0.5rem;
+  background-color: ghostwhite;
+  will-change: scroll;
+  resize: both;
+}
+
+.Scroller p:nth-child(odd) {
+  background-color: lavender;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.Scroller p:nth-child(3n+3){
+  color: mediumpurple;
+  background-color: transparent;
+  padding: 0;
+}
+
+.Scroller ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.Scroller ul li {
+  list-style: none;
+  background-color: lavender;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  transition: height 0.5s;
+}
+.Scroller ul li:hover {
+  height: 8rem;
+}
+
+.Scroller ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
